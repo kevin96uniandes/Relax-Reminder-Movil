@@ -4,4 +4,6 @@
     <string name="title_app">Relax Reminder</string>
     <string name="name">Nombre</string>
     <string name="password">Contraseña</string>
+    <string name="log_in">Ingresar</string>
+    <string name="register">Registrarse</string>
 </resources>
