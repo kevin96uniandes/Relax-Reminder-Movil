@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.RelaxReminder" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.RelaxReminder" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Cambiar el color principal -->
         <item name="colorPrimary">@color/rr_primary</item>
         <!-- Cambiar el color oscuro de la barra de estado -->
@@ -10,7 +10,8 @@
         <item name="colorAccent">@color/rr_background_activity</item>
 
         <item name="textInputStyle">@style/customInputText</item>
-        <!-- Otros atributos de estilo -->
+
+        <item name="android:actionMenuTextColor">@color/rr_background_activity</item>
     </style>
 
     <style name="customInputText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">

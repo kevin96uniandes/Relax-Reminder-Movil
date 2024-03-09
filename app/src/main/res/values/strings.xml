@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RelaxReminder</string>
+    <string name="app_name">Relax reminder</string>
     <string name="welcome_to">Bienvenido a</string>
     <string name="title_app">Relax Reminder</string>
     <string name="name">Nombre</string>
@@ -10,4 +10,6 @@
     <string name="menu_routine">Rutina</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.relaxreminder.R
 import com.example.relaxreminder.databinding.ActivityDashboardBinding
+import com.example.relaxreminder.ui.fragments.HomeFragment
 import com.google.android.material.navigation.NavigationView
 
 class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -46,7 +48,7 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     private fun goToHome() {
         nextActivity(
-            DashboardActivity::class.java,
+            HomeFragment::class.java,
             Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
         )
     }
@@ -78,10 +80,17 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         item.isChecked = true
         when(item.itemId) {
-            R.id.nav_item_home -> goToHome()
+            R.id.nav_item_home -> changeFragment(HomeFragment.newInstance(), item.title.toString())
             //R.id.nav_item_routine -> changeFragment(VisitorHomeFragment.newInstance(), item.title.toString())
             }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(toggle.onOptionsItemSelected(item)) {
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

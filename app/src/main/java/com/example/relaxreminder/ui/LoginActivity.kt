@@ -15,6 +15,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         binding.btnLogIn.setOnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
