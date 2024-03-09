@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RelaxReminder</string>
+    <string name="welcome_to">Bienvenido a</string>
+    <string name="title_app">Relax Reminder</string>
+    <string name="name">Nombre</string>
+    <string name="password">Contraseña</string>
 </resources>

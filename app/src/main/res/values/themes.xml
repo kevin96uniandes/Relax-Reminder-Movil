@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.RelaxReminder" parent="Theme.MaterialComponents.Light.NoActionBar" />
+    <style name="Theme.RelaxReminder" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Cambiar el color principal -->
+        <item name="colorPrimary">@color/rr_primary</item>
+        <!-- Cambiar el color oscuro de la barra de estado -->
+        <item name="colorPrimaryDark">@color/rr_background_component</item>
+        <!-- Cambiar el color de acento -->
+        <item name="colorAccent">@color/rr_background_activity</item>
+
+        <item name="textInputStyle">@style/customInputText</item>
+        <!-- Otros atributos de estilo -->
+    </style>
+
+    <style name="customInputText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Definir el color del hint -->
+        <item name="boxBackgroundColor">@color/rr_background_component</item>
+    </style>
 </resources>
