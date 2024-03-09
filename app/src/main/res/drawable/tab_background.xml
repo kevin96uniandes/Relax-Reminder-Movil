@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado cuando el tab está seleccionado -->
+    <item android:drawable="@color/rr_tab_active" android:state_selected="true" />
+    <!-- Estado cuando el tab no está seleccionado -->
+    <item android:drawable="@color/rr_tab_inactive" />
+</selector>
