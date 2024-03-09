@@ -82,7 +82,8 @@
             android:backgroundTint="@color/rr_primary"
             app:cornerRadius="20sp"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            app:rippleColor="@color/rr_ripple_effect_primary"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/register"

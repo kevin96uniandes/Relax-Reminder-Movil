@@ -12,5 +12,6 @@
     <color name="rr_background_activity">#E1E4D9</color>
     <color name="rr_background_component">#B0CB9E</color>
     <color name="rr_primary">#466731</color>
+    <color name="rr_ripple_effect_primary">#3D592B</color>
     <color name="rr_text">#43483E</color>
 </resources>
