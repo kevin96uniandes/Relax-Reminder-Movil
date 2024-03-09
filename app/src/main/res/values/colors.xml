@@ -17,4 +17,7 @@
     <color name="rr_tab_inactive">#97D26F</color>
     <color name="rr_tab_active">#3E4A35</color>
     <color name="rr_background_view_pager">#D1D7C5</color>
+    <color name="rr_background_switch_thumb_active">#C6EEAA</color>
+    <color name="rr_background_switch_thumb_inactive">#B6B6B6</color>
+    <color name="rr_background_switch_track_inactive">#3D3D3D</color>
 </resources>
