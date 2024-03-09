@@ -6,4 +6,8 @@
     <string name="password">Contraseña</string>
     <string name="log_in">Ingresar</string>
     <string name="register">Registrarse</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_routine">Rutina</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>

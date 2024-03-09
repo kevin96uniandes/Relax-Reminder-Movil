@@ -73,7 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/log_in"
+            android:id="@+id/btn_log_in"
             android:layout_width="300sp"
             android:layout_height="wrap_content"
             android:text="@string/log_in"
@@ -86,7 +86,7 @@
             app:rippleColor="@color/rr_ripple_effect_primary"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/register"
+            android:id="@+id/btn_register"
             android:layout_width="300sp"
             android:layout_height="wrap_content"
             android:text="@string/register"
