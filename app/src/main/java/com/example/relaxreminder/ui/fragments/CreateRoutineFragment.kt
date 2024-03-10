@@ -37,7 +37,8 @@ class CreateRoutineFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        val activity = requireNotNull(this.activity)
+        activity.title = "Crear rutina"
         binding = FragmentCreateRoutineBinding.inflate(inflater, container, false)
 
         val adapter = TabsCreateRoutineFragmentAdapter(requireActivity().supportFragmentManager, lifecycle, listOf("Alarmas", "Programaciones"))
