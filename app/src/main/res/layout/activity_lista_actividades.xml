@@ -61,7 +61,7 @@
         android:layout_height="50dp"
         android:background="@drawable/rounded_button"
         android:text="+"
-        android:textSize="32sp"
+        android:textSize="37sp"
         android:textColor="@color/rr_background_component"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"

@@ -12,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieAnimationView
@@ -94,26 +95,20 @@ class CreateRoutineFragment : Fragment() {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.bottom_sheet_layout)
         val cancelButton = dialog.findViewById<ImageView>(R.id.cancelButton)
-        /*
-        val videoLayout = dialog.findViewById<LinearLayout>(R.id.layoutVideo)
-        val shortsLayout = dialog.findViewById<LinearLayout>(R.id.layoutShorts)
-        val liveLayout = dialog.findViewById<LinearLayout>(R.id.layoutLive)
 
-        videoLayout.setOnClickListener {
+        val addAlarm = dialog.findViewById<LinearLayout>(R.id.layoutVideo)
+
+        //val shortsLayout = dialog.findViewById<LinearLayout>(R.id.layoutShorts)
+        //val liveLayout = dialog.findViewById<LinearLayout>(R.id.layoutLive)
+
+        addAlarm.setOnClickListener {
             dialog.dismiss()
-            Toast.makeText(this@MainActivity, "Upload a Video is clicked", Toast.LENGTH_SHORT)
-                .show()
+            val transaction = this.activity?.supportFragmentManager?.beginTransaction()
+            transaction?.replace(R.id.frame_layout, AddAlarmFragment())
+            transaction?.disallowAddToBackStack()
+            transaction?.commit()
         }
-        shortsLayout.setOnClickListener {
-            dialog.dismiss()
-            Toast.makeText(this@MainActivity, "Create a short is Clicked", Toast.LENGTH_SHORT)
-                .show()
-        }
-        liveLayout.setOnClickListener {
-            dialog.dismiss()
-            Toast.makeText(this@MainActivity, "Go live is Clicked", Toast.LENGTH_SHORT).show()
-        }
-         */
+
         cancelButton.setOnClickListener { dialog.dismiss() }
         dialog.show()
         dialog.window!!.setLayout(

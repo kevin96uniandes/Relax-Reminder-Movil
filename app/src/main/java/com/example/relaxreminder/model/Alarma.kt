@@ -1,4 +1,4 @@
-package com.example.relaxreminder.models
+package com.example.relaxreminder.model
 
 class Alarma (
     val name: String,
