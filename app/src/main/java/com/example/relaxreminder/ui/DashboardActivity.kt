@@ -12,9 +12,10 @@ import com.example.relaxreminder.R
 import com.example.relaxreminder.databinding.ActivityDashboardBinding
 import com.example.relaxreminder.ui.fragments.CreateRoutineFragment
 import com.example.relaxreminder.ui.fragments.HomeFragment
+import com.example.relaxreminder.ui.interfaces.FragmentChangeListener
 import com.google.android.material.navigation.NavigationView
 
-class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, FragmentChangeListener {
 
     private lateinit var binding: ActivityDashboardBinding
     private lateinit var drawerLayout: DrawerLayout
@@ -70,5 +71,15 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onFragmentChange(fragment: Fragment) {
+        val itemId = when(fragment) {
+            is HomeFragment -> R.id.nav_item_home
+            is CreateRoutineFragment -> R.id.nav_item_routine
+            else -> return
+        }
+        val menuItem = navigationView.menu.findItem(itemId)
+        onNavigationItemSelected(menuItem)
     }
 }

@@ -80,12 +80,13 @@
             android:layout_height="wrap_content"
             android:text="@string/log_in"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:textColor="@color/rr_background_component"
+            android:textColor="@color/rr_background_item_list"
             android:backgroundTint="@color/rr_primary"
             app:cornerRadius="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            app:rippleColor="@color/rr_ripple_effect_primary"/>
+            app:rippleColor="@color/rr_ripple_effect_primary"
+            android:textStyle="bold"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_register"
@@ -97,7 +98,8 @@
             android:backgroundTint="@null"
             app:cornerRadius="20sp"
             android:layout_gravity="center"
-            android:layout_marginTop="5sp"/>
+            android:layout_marginTop="5sp"
+            android:textStyle="bold"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
