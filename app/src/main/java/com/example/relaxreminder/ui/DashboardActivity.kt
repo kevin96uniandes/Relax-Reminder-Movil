@@ -12,6 +12,7 @@ import com.example.relaxreminder.R
 import com.example.relaxreminder.databinding.ActivityDashboardBinding
 import com.example.relaxreminder.ui.fragments.CreateRoutineFragment
 import com.example.relaxreminder.ui.fragments.HomeFragment
+import com.example.relaxreminder.ui.fragments.ListarActividadesFragment
 import com.example.relaxreminder.ui.interfaces.FragmentChangeListener
 import com.google.android.material.navigation.NavigationView
 
@@ -60,7 +61,7 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         item.isChecked = true
         when(item.itemId) {
             R.id.nav_item_home -> changeFragment(HomeFragment.newInstance(), item.title.toString())
-            R.id.nav_item_routine -> changeFragment(CreateRoutineFragment.newInstance(), item.title.toString())
+            R.id.nav_item_routine -> changeFragment(ListarActividadesFragment.newInstance(), item.title.toString())
             }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true

@@ -49,10 +49,10 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="330dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="87dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/item_activity_border"
             android:orientation="vertical"
             android:padding="10dp">
@@ -70,13 +70,13 @@
                 android:id="@+id/chip_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/background_edit_activity"
-                app:chipBackgroundColor="@color/rr_background_chip"
                 android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:text="Programada"/>
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/background_edit_activity"
+                android:text="Programada"
+                app:chipBackgroundColor="@color/rr_background_chip" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     </FrameLayout>

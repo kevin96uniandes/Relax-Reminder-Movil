@@ -86,7 +86,7 @@ class CreateRoutineFragment : Fragment() {
 
     private fun backListRoutines(dialog: AlertDialog?) {
         dialog?.dismiss()
-        cambiarFragmento(HomeFragment())
+        cambiarFragmento(ListarActividadesFragment())
     }
 
     private fun showBottomDialog() {
@@ -138,7 +138,10 @@ class CreateRoutineFragment : Fragment() {
     }
 
     private fun cambiarFragmento(fragment: Fragment) {
-        fragmentChangeListener?.onFragmentChange(fragment)
+        val transaction = this.activity?.supportFragmentManager?.beginTransaction()
+        transaction?.replace(R.id.frame_layout, fragment)
+        transaction?.disallowAddToBackStack()
+        transaction?.commit()
     }
 
     companion object {

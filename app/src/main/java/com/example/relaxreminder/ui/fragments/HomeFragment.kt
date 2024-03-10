@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.relaxreminder.R
+import com.example.relaxreminder.model.Alarm
+import com.example.relaxreminder.ui.adapter.AlarmaItemAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +26,10 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private var adapter: AlarmaItemAdapter? = null
+    val data: ArrayList<Alarm> = ArrayList()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,10 +42,23 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
 
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        for (i in 0..3) {
+            val alarma = Alarm("Alarma " + i, "", "", "")
+            data.add(alarma)
+        }
+
+        var recyclerView: RecyclerView = view.findViewById(R.id.recycleViewAlarmas)
+
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        adapter = AlarmaItemAdapter(data)
+        recyclerView.adapter = adapter
+        recyclerView.visibility = View.VISIBLE
+
+        return view
+    }
     companion object {
         @JvmStatic
         fun newInstance() = HomeFragment()

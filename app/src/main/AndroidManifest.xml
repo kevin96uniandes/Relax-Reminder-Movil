@@ -16,12 +16,6 @@
         tools:replace="android:icon">
         <activity
             android:name=".ui.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ListarActividadesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.HomeActivity"
             android:exported="true"
             android:label="@null"
             android:theme="@style/Theme.RelaxReminder">

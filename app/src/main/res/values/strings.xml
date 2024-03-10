@@ -24,6 +24,8 @@
     <string name="good_job">Buen trabajo!!!</string>
     <string name="create_successfull">creada exitosamente!!!</string>
     <string name="accept">Aceptar</string>
+    <string name="Si">Si</string>
+    <string name="No">No</string>
     <string name="edit">Editar</string>
     <string name="delete">Eliminar</string>
 </resources>

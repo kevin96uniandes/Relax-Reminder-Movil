@@ -19,6 +19,8 @@
     <color name="rr_background_button_edit">#C6EEAA</color>
     <color name="rr_background_button_delete">#AD4740</color>
     <color name="rr_primary">#466731</color>
+    <color name="rr_si">#DA0000</color>
+    <color name="rr_no">#D8D8D8</color>
     <color name="rr_ripple_effect_primary">#3D592B</color>
     <color name="rr_text">#43483E</color>
     <color name="rr_tab_inactive">#97D26F</color>
