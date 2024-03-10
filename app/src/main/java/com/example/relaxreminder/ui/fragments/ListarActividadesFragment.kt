@@ -35,7 +35,8 @@ class ListarActividadesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        val activity = requireNotNull(this.activity)
+        activity.title = "Lista de rutinas"
         val view = inflater.inflate(R.layout.activity_lista_actividades, container, false)
 
         for (i in 0..3) {
