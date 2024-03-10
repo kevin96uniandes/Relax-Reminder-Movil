@@ -18,6 +18,7 @@ import com.example.relaxreminder.R
 import com.example.relaxreminder.model.Activity
 import com.example.relaxreminder.ui.adapter.ActivityItemAdapter
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListarActividadesFragment : Fragment() {
     private var adapter: ActivityItemAdapter? = null
@@ -62,7 +63,7 @@ class ListarActividadesFragment : Fragment() {
             }
         })
 
-        val createRoutineButton = view.findViewById<Button>(R.id.add_album)
+        val createRoutineButton = view.findViewById<FloatingActionButton>(R.id.add_routine)
 
         createRoutineButton.setOnClickListener {
             navigateToCreateRoutine()

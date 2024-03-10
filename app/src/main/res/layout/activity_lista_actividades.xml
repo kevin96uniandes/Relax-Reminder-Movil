@@ -55,17 +55,21 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20sp"
         android:paddingRight="20sp">
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/add_album"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/rounded_button"
-        android:text="+"
-        android:textSize="37sp"
-        android:textColor="@color/rr_background_component"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_routine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/plus"
+            app:backgroundTint="@color/rr_primary"
+            app:maxImageSize="48dp"
+            app:tint="@color/rr_background_item_list"
+            android:elevation="8dp"/>
+
+
 
 </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
