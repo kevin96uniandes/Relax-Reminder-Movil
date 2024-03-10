@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RelaxReminder"
-        tools:targetApi="33">
+        tools:targetApi="33"
+        tools:replace="android:icon">
         <activity
             android:name=".ui.LoginActivity"
             android:exported="false" />
@@ -29,6 +31,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

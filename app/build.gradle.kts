@@ -57,9 +57,15 @@ dependencies {
     implementation("androidx.core:core-ktx:1.8.0")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation ("com.google.android.material:material:1.11.0")
+<<<<<<< HEAD
     implementation("com.apachat:swipereveallayout-android:1.1.2")
+=======
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
+>>>>>>> 62ad849cacc04e144d896bebde358c0b7859f512
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation ("com.afollestad.material-dialogs:core:3.3.0")
+    implementation ("com.airbnb.android:lottie:4.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
