@@ -11,5 +11,11 @@
     <!-- relax reminder -->
     <color name="rr_background_activity">#E1E4D9</color>
     <color name="rr_background_component">#B0CB9E</color>
+    <color name="rr_background_topbar">#CADEBC</color>
+    <color name="rr_background_secondary">#3E4A35</color>
+    <color name="rr_background_chip">#803E4A35</color>
+    <color name="rr_background_button_active">#B6BBC4</color>
+    <color name="rr_background_button_edit">#C6EEAA</color>
+    <color name="rr_background_button_delete">#AD4740</color>
     <color name="rr_primary">#466731</color>
 </resources>

@@ -1,0 +1,85 @@
+<!-- list_item_layout.xml -->
+<com.apachat.swipereveallayout.core.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/editButton"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_editar"
+                android:drawablePadding="17dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/background_edit_activity" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteButton"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:drawableStart="@drawable/ic_delete"
+                android:drawablePadding="17dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/background_delete_activity" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/item_activity_border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/contenidoActividad"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:text="Item"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_edit_activity"
+                app:chipBackgroundColor="@color/rr_background_chip"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Programada"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </FrameLayout>
+
+
+</com.apachat.swipereveallayout.core.SwipeLayout>

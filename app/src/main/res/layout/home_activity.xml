@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rr_background_activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/section_alarmas_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seccion alarmas del dia"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewAlarmas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/section_intinerario_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intinerario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"/>
+    <FrameLayout
+        android:id="@+id/intinerario_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="257dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_layout_rutina_actual"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_inactive"
+                    android:text="L"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_active"
+                    android:text="M"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_inactive"
+                    android:text="M"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_inactive"
+                    android:text="J"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_inactive"
+                    android:text="V"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_inactive"
+                    android:text="S"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_button_semana_inactive"
+                    android:text="D"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Martes 27 de Febrero 2024"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="60sp"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 "
+                    android:textSize="60sp"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 "
+                    android:textSize="60sp"
+                    android:textStyle="bold"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:paddingTop="5dp"
+                    android:text="total alarmas"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="alarmas aceptadas"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:text="alarmas pospuestas"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/section_bottom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rutina actual"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"/>
+    <FrameLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_layout_rutina_actual"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/contenidoActividad"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:text="Mi rutina favorita"
+                android:typeface="sans"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/fecha_programacion"
+                android:layout_width="280dp"
+                android:layout_height="20dp"
+                android:text="Del dia 16/02/2023 al 03/02/2023"
+                android:typeface="sans"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/dias_programacion"
+                android:layout_width="280dp"
+                android:layout_height="20dp"
+                android:text="8 dias"
+                android:typeface="sans"
+                android:textSize="14sp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+</LinearLayout>
