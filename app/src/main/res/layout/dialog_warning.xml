@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:text="Remover alarma?"
+        android:text="Remover rutina?"
         android:layout_gravity="center"
         android:textColor="@color/rr_text"/>
 
