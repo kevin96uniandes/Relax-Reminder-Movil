@@ -2,7 +2,7 @@
 
 ## Intrucciones de la entrega
 
-Debes accerder al siguiente link [Relax Reminder Apk](https://uniandes-my.sharepoint.com/:u:/g/personal/k_maldonadod_uniandes_edu_co/EdESSfz7WzdNrWSm7dm6i9IBuOM0ClIaJgsw5rbUr16WZg?e=AiLldc) el cual redireccionara a la descarga del apk, este link esta habilitado para usuarios que tengan cuenta de correo de la universida de los Andes, hacemos click en el botón de descargar
+Debes accerder al siguiente link [Relax Reminder Apk](https://uniandes-my.sharepoint.com/:u:/g/personal/k_maldonadod_uniandes_edu_co/Ebt1zWrcyy9MkDsKZKfn08IBsMUFs6TCJxqx04H0IvaGHQ?e=jZH2JM) el cual redireccionara a la descarga del apk, este link esta habilitado para usuarios que tengan cuenta de correo de la universida de los Andes, hacemos click en el botón de descargar
 
 ![image](https://github.com/kevin96uniandes/Relax-Reminder-Movil/assets/123959005/6fc44231-121f-4f68-8e54-e3d2b2d3d6cf)
 
@@ -40,7 +40,7 @@ La aplicación debera ejecutarse automaticamente, si no, debe ir a la ubicación
 
 ![image](https://github.com/kevin96uniandes/Relax-Reminder-Movil/assets/123959005/43ed5d27-bada-441e-9acc-202df851870d)
 
-![image](https://github.com/kevin96uniandes/Relax-Reminder-Movil/assets/123959005/7bd01138-b864-4c99-a249-d3b6f3c2f30a)
+![image](https://github.com/kevin96uniandes/Relax-Reminder-Movil/assets/123959005/4a620f9b-4747-4dfd-bc60-d5f8df41d0c3)
 
 ### Crear rutina
 
@@ -54,6 +54,7 @@ La aplicación debera ejecutarse automaticamente, si no, debe ir a la ubicación
 
 ![image](https://github.com/kevin96uniandes/Relax-Reminder-Movil/assets/123959005/82acfb44-9636-4d72-915c-47431169e480)
 
+![image](https://github.com/kevin96uniandes/Relax-Reminder-Movil/assets/123959005/776e2848-1ea8-4dfd-98de-a94cb3a5845c)
 
 
 
